@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function test(){
+		var f = document.forms[0];//第一个form表单
+		f.action = "/1_SerletInfo/abc/good";
+		f.submit();
+	}
+
+</script>
+
+<form action="/1_SerletInfo/abc/good">
+<input type="submit" value="Test...">
+
+ <input type="button" value = "Click Me!" onclick="test()">
+</form>
+
+<a href="/1_SerletInfo/abc/good">Link ...</a>
+
+</body>
+</html>
