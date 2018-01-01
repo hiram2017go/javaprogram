@@ -62,7 +62,7 @@
  </c:if>
   <hr>
  <c:set value="zyy" var="name" scope="request"></c:set>
- <c:out value="${name }"></c:out>
+ <c:out value="${name }"></c:out>  //value值就是这里显示的值
 
  <hr>
  <c:set var="age">100</c:set>
