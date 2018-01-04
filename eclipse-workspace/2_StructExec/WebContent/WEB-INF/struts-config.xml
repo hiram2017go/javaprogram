@@ -9,18 +9,19 @@
 
 <struts-config>
 
-	<form-beans>
-		<form-bean name="loginForm2" type="com.zyy.form.LoginForm" />
-	</form-beans>
-	
+	<global-forwards>
+		<forward name="index" path="/index.html"></forward>
+	</global-forwards>
+
 
 	<action-mappings>
-		<action path="/login" type="com.zyy.action.LoginAction" name="loginForm2">  <!-- name为关联form-bean中的form -->
+		<action path="/login" type="com.zyy.action.LoginAction">  
 		<forward name="success" path="/Success.jsp"></forward>
 		<forward name="failure" path="/Failure.jsp"></forward>
 		</action>
+		
+		<action path="/myAction" type="com.zyy.action.MyAction" /> 
 	</action-mappings>
-
 	
 </struts-config>
 

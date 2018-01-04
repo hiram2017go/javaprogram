@@ -16,6 +16,7 @@ public class LoginAction extends Action {
 	public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		// TODO Auto-generated method stub
+		//mapping --->处理页面之间的跳转.
 		System.out.println("execute....");
 		/*String username = request.getParameter("username");
 		String password = request.getParameter("password");*/
