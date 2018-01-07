@@ -27,6 +27,14 @@ ${requestScope.error }
 		<td><html:password property="password"></html:password><html:errors property="password" /></td>
 	</tr>
 	<tr>
+		<td>Position:</td>
+		<td>
+			<html:select property="username">
+				<html:options collection="LIST" property="id" labelProperty="name"/> 
+			</html:select>
+		</td>
+	</tr>
+	<tr>
 		<td colspan="2"><html:submit></html:submit></td>
 	</tr>
 </table>
