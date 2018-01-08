@@ -16,7 +16,7 @@
 <body>
 	
 	${msg }
-	<html:form action="/login.do">
+	<html:form action="/login">
 		<table border="0">
 			<tr>
 				<td>UserName:</td>
