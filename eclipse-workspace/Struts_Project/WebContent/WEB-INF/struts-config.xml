@@ -28,7 +28,7 @@
 				type="com.zyy.struts.action.LoginAction"
 				name="loginForm"
 				input="/Login.jsp">
-			<forward name="success" path="/Success.jsp"></forward>
+			<forward name="success" path="/WebForm/Success.jsp"></forward>
 		</action>
 		
 		<action path="/register"
@@ -40,7 +40,7 @@
 		<action path="/order"
 				type="com.zyy.struts.action.OrderAction"
 				name="orderForm"
-				input="/Order.jsp"
+				input="/WebForm/Order.jsp"
 				parameter="action">
 		
 		</action>		
