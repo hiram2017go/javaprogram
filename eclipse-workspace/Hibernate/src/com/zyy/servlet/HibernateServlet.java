@@ -7,9 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class HibernateServlet
- */
+import com.zyy.bean.User;
+import com.zyy.dao.UserDao;
+import com.zyy.dao.impl.UserDaoImpl;
+
 @WebServlet("/HibernateServlet")
 public class HibernateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -28,6 +29,13 @@ public class HibernateServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
+		User u = new User();
+		u.setName("zyy");
+		u.setPassword("123456");
+		
+		UserDao dao = new UserDaoImpl();
+		dao.save(u);
+		System.out.println("数据插入完成");
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 	}

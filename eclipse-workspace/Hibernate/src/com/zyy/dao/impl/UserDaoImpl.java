@@ -22,6 +22,7 @@ public class UserDaoImpl implements UserDao {
 			tran.commit();	
 		} catch (Exception e) {
 			// TODO: handle exception
+			System.out.println("数据插入时出错:"+e.getMessage());
 			tran.rollback();
 		}finally {
 			session.close();	
