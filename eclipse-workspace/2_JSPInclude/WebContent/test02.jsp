@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<%@ include file="test01.jsp" %> 
+<%@ include file="test01.jsp" %>
 
 这是第二个测试页面
 </body>

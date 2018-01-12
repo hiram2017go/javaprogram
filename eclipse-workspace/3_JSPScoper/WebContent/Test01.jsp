@@ -13,9 +13,9 @@
  		session.setAttribute("session_name", "session_value2");
 
 		request.setAttribute("request_name", "request_value2");
-		
+
 		application.setAttribute("application_name", "application_value2");
-		
+
 		response.sendRedirect("Test02.jsp");
 %>
 
