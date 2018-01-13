@@ -20,4 +20,5 @@
    <property name="connection.datasource">jdbc/dstest</property>
    内容表示数据源。
 
+4.启动本地tomcat,通过浏览器访问可得到结果。
    上述方式即可配置完毕。可以使用WebContext目录下的jsp进行测试。
