@@ -5,10 +5,11 @@
 <hibernate-configuration>
     <session-factory>
     <!-- 数据库连接配置 -->
-    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="connection.url">jdbc:mysql://10.32.10.73:3310/hibernate_db</property>
+    <!-- <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
     <property name="connection.username">root</property>
-    <property name="connection.password">123456</property>
+    <property name="connection.password">123456</property> -->
+    <property name="connection.datasource">jdbc/dstest</property>
     <!-- 数据库连接池的大小 -->
     <property name="connection.pool_size">5</property>
      <!-- 每次从数据库中取出并放到JDBC的Statement中的记录条数。Fetch Size设的越大，读数据库的次数越少，速度越快，Fetch Size越小，读数据库的次数越多，速度越慢-->   

@@ -35,7 +35,7 @@ public class HibernateServlet extends HttpServlet {
 		
 		UserDao dao = new UserDaoImpl();
 		dao.save(u);
-		System.out.println("���ݲ������");
+		System.out.println("－－－－－－－－－－－－－－－－－");
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 	}
