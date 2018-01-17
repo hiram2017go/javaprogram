@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-17 11:23:57 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zyy.bean.User" table="hibernate_component">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="age" type="int">
+            <column name="AGE" />
+        </property>
+        
+       <!--  <property name="firstname" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastname" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="tel" type="java.lang.String">
+            <column name="TEL" />
+        </property>
+        <property name="postcode" type="java.lang.String">
+            <column name="POSTCODE" />
+        </property>
+         -->
+         
+         <component name="name" class="com.zyy.bean.Name">
+         	<property name="firstname" type="java.lang.String">
+	            <column name="FIRSTNAME" />
+	        </property>
+	        <property name="lastname" type="java.lang.String">
+	            <column name="LASTNAME" />
+       		</property>
+         </component>
+         
+         <component name="contact" class="com.zyy.bean.Contact">
+         	<property name="address" type="java.lang.String">
+            	<column name="ADDRESS" />
+        	</property>
+	        <property name="tel" type="java.lang.String">
+	            <column name="TEL" />
+	        </property>
+	        <property name="postcode" type="java.lang.String">
+	            <column name="POSTCODE" />
+	        </property>
+         </component>
+         
+    </class>
+</hibernate-mapping>
