@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-18 17:26:53 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zyy.bean.Dic" table="DicTbl">
+    	<id name="id">
+    		<generator class="native"></generator>
+    	</id>
+    	
+    	<discriminator column="category" type="string"/>
+    	<property name="name" column="name" type="string"/>
+    	
+    	<subclass name="com.zyy.bean.Major" discriminator-value="M"/>
+    	<subclass name="com.zyy.bean.Region" discriminator-value="R"/>
+    	<subclass name="com.zyy.bean.Position" discriminator-value="P"/>
+    
+    </class>
+</hibernate-mapping>
