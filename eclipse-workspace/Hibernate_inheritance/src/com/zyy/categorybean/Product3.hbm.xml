@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-18 16:10:33 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zyy.categorybean.Product3" table="producttbl3">
+    	<id name="id">
+    		<generator class="native"></generator>
+    	</id>
+    	
+    	<discriminator column="category" type="string" /> <!-- 用来做区分的字段 -->
+    	
+    	<property name="name" column="name" type="string"/>
+    	<subclass name="com.zyy.categorybean.Book3" discriminator-value="B">
+    		<property name="pagecount" column="pagecount" type="int"></property>
+    	</subclass>
+    	
+    	<subclass name="com.zyy.categorybean.Clothes3" discriminator-value="C">
+    		<property name="size" column="size" type="int"></property>
+    	</subclass>
+    	
+    </class>
+</hibernate-mapping>

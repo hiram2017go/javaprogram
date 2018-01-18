@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-18 15:20:36 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zyy.maintablbean.Product2" table="producttbl2">
+        <id name="id">
+        	<generator class="native"></generator>
+        </id>
+        
+        <property name="name" column="name" type="java.lang.String"></property>
+        
+        <joined-subclass name="com.zyy.maintablbean.Book2" table="booktbl2">
+        	<key column="id"/>  <!-- 子表对应外键 -->
+        	<property name="pagecount" column="pagecount" type="int"></property>
+        </joined-subclass>
+        
+        <joined-subclass name="com.zyy.maintablbean.Clothes2" table="clothestbl2">
+        	<key column="id"></key>
+        	<property name="size" column="size" type="int"></property>
+        </joined-subclass>
+    </class>
+</hibernate-mapping>
