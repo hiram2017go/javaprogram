@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-19 13:53:23 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zyy.single1to1bean.Card" table="CardTbl">
+        <id name="id" type="java.lang.Integer">
+            <generator class="foreign">
+            	<param name="property">citizen</param>   <!--  属性为Card中的属性citizen为外键foreign -->            	
+            </generator>
+        </id>
+        <property name="serial" type="java.lang.String">
+            <column name="serial" />
+        </property>
+
+        <one-to-one name="citizen" class="com.zyy.single1to1bean.Citizen"></one-to-one>  <!-- 对应关系,citizen为Card类与Citizen的一对一的关系. -->
+    </class>
+</hibernate-mapping>

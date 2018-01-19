@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-19 11:33:35 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zyy.twowaymto1bean.Customer2" table="CustomerTbl">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        
+        <!-- <set name="Orders" table="OrderTbl" inverse="false" lazy="true">  集合外键  系统自动生成的
+            <key>
+                <column name="ID" />
+            </key>
+            <element type="string">
+                <column name="ORDERS" />
+            </element>
+        </set> -->
+        
+        <set name="orders"  table="OrderTbl" lazy="false">
+        	<key column="CustomerID"></key>  <!-- 集合外键 -->
+        	<one-to-many  class="com.zyy.twowaymto1bean.Orders2"/>
+        </set>
+    </class>
+</hibernate-mapping>
