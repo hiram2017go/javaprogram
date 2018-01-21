@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-1-20 12:53:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.zyy.bean.Question" table="questiontbl">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="createTime" type="java.lang.String">
+            <column name="createTime" />
+        </property>
+        <many-to-one name="sm" class="com.zyy.bean.SystemMember">
+            <column name="systemMemberID" />
+        </many-to-one>
+        <many-to-one name="qt" class="com.zyy.bean.QuestionType">
+            <column name="questionTypeID" />
+        </many-to-one>
+        <property name="questionKey" type="java.lang.String">
+            <column name="questionKey" />
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="content" />
+        </property>
+        <property name="answerCount" type="int">
+            <column name="answerCount" />
+        </property>
+    </class>
+</hibernate-mapping>
