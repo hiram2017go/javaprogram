@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+          
+<struts>
+
+	<constant name="struts.action.extension" value="do"></constant> <!-- 修改struts调用方式由默认的action改为.do -->
+	<package name="example" namespace="/" extends="struts-default">
+		<action name="login" class="com.zyy.action.LoginAction">
+			<result name="success" type="plainText">/Success.jsp</result>  <!-- type位显示类型 -->
+			<result name="input">/Login.jsp</result>
+		</action>
+	</package>
+</struts>
