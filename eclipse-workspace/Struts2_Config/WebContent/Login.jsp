@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-${tip}
+${tip}<hr>
+	${sessionScope.sessionname}
 <body>
 	<form name="f1" id = "f1" action="login.do" method="post">
 		<table border="0">

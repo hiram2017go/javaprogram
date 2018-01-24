@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Welcome, ${username}
-	
+login success!
 </body>
 </html>

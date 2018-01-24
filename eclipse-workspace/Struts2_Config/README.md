@@ -61,3 +61,7 @@
 
  <result name="success" type="plainText">/Success.jsp</result>  <!-- type位显示类型 -->
  其中type表示返回的类型.
+------------------------------------------------
+ActionContext ac = ActionContext.getContext();
+			Map session = ac.getSession();   /*使用map的put加入session，不与serverlet耦合.*/
+			session.put("sessionname", "hahahahha");

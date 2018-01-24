@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+          
+<struts>
+	<!-- <constant name="struts.enable.DynamicMethodInvocation" value="true"/> -->
+	<constant name="struts.devMode" value="true"/>
+	<!-- 第一种配置方式 -->
+<!-- 	<package name="example" namespace="/" extends="struts-default">
+		<global-allowed-methods>login</global-allowed-methods>
+		<action name="user" class="com.zyy.action.UserAction">
+			<result name="loginOK">/Login.jsp</result>
+			<result name="registerOK">/Register.jsp</result>
+			<allowed-methods>regex:.*</allowed-methods>
+		</action>
+		
+	</package> -->
+	
+	<!-- 第二种调用方式 -->
+	<!-- <package name="example" namespace="/" extends="struts-default">
+		<action name="userLogin" class="com.zyy.action.UserAction" method="login">
+			<result name="loginOK">/Login.jsp</result>
+		</action>
+		
+		<action name="userRegister" class="com.zyy.action.UserAction" method="register">
+			<result name="registerOK">/Register.jsp</result>
+		</action>
+	</package> --> 
+	
+	<package name="example" namespace="/" extends="struts-default">
+<!-- 		<global-allowed-methods>login</global-allowed-methods> -->
+		<action name="*Action" class="com.zyy.action.UserAction" method="{1}">
+			<result name="loginOK">/Login.jsp</result>
+			<result name="registerOK">/Register.jsp</result>
+			<allowed-methods>regex:.*</allowed-methods>
+		</action>
+	</package>
+</struts>
