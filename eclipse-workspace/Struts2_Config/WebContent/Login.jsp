@@ -24,8 +24,6 @@ ${tip}<hr>
 				<td colspan="2" align="center"><input type="submit" value="Login"></td>
 			</tr>
 		</table>
-	
-	
 	</form>
 </body>
 </html>
