@@ -8,7 +8,9 @@
 	<package name="interceptordemo" namespace="/" extends="struts-default">
 	
 		<interceptors>
-			<interceptor name="checklogininterceptor" class="com.zyy.interceptor.LoginInterceptor"/>
+			<interceptor name="checklogininterceptor" class="com.zyy.interceptor.LoginInterceptor">
+				<param name="value">这里更加这个name的值将这句话传递过去</param>
+			</interceptor>
 		</interceptors>
 		
 		<global-results>
