@@ -10,4 +10,7 @@ public interface UserDao {
 	public void delete(int id);
 	public void update(User u);
 	public List list();
+	
+	public void deleteforxml();
+	public void deleteforanno();
 }

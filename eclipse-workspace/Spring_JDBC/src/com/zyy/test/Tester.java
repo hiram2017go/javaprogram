@@ -13,10 +13,12 @@ public class Tester {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
 		UserDao dao = (UserDao)ac.getBean("userDao");
 		User u = new User();
-		u.setAge(200);
+		u.setAge(600);
 		u.setUsername("monkey");
 		//dao.save(u);
-		dao.delete(1);
+		//dao.deleteforxml();
+		
+		dao.deleteforanno();
 	}
 
 }

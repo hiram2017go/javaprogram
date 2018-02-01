@@ -6,6 +6,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import com.zyy.bean.User;
@@ -33,6 +35,7 @@ public class UserDaoImpl implements UserDao {
 		jdbcTemplate.update(sql, new Object[]{u.getUsername(), u.getAge()}); //需要导入Spring-tx.jar包
 	}
 
+	//当前方法为AOP 的 API实现方式
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
@@ -62,6 +65,26 @@ public class UserDaoImpl implements UserDao {
 	public List list() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	//当前方法为xml的实现事务方式
+	@Override
+	public void deleteforxml() {
+
+		String sql1 = "delete from usertbl where id = ? ";
+		String sql2 = "delete from usertbsl where id = ? ";
+		jdbcTemplate.update(sql1, new Object[] {9});
+		jdbcTemplate.update(sql2, new Object[] {8});
+	}
+
+	//当前为注解的事务实现方式
+	@Transactional(propagation=Propagation.REQUIRED)
+	public void deleteforanno() {
+
+		String sql1 = "delete from usertbl where id = ? ";
+		String sql2 = "delete from usertbl where id = ? ";
+		jdbcTemplate.update(sql1, new Object[] {9});
+		jdbcTemplate.update(sql2, new Object[] {8});
 	}
 
 }
