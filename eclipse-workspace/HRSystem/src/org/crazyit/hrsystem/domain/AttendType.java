@@ -4,10 +4,11 @@ package org.crazyit.hrsystem.domain;
 * 对应考勤的类别，包含考勤的名词，如吃到、早退等名称
 * */
 
-import javax.persistence.*;
-import java.io.Serializable;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="attend_type_inf")
