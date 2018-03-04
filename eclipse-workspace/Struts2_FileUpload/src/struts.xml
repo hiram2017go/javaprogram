@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+          
+<struts>
+	<constant name="struts.devMode" value="true"/>
+	<constant name="struts.multipart.saveDir" value="D:\\Temp"></constant> <!-- 上传后这个临时文件放在哪里，上传完成后会把文件移动到目的文件夹，将临时文件删除掉 ,如果出错，将会只存在临时文件中-->
+	<package name="struts2-fileupload" namespace="/" extends="struts-default">
+	 	<action name="upload" class="com.zyy.action.FileAction">
+	 		<result name="success">/Success.jsp</result>
+	 		
+	 		<param name="savePath">/upload</param> <!-- 必须加了这句话，才能将tmp文件转存为正常文件 -->
+	 	</action>
+	</package>
+</struts>

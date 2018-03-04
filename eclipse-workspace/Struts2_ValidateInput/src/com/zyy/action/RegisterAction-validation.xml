@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC 
+  		"-//Apache Struts//XWork Validator 1.0.2//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+ <validators>
+ 	<field name="username">
+ 		<field-validator type="requiredstring">
+ 			<message key="register.username.required"></message>
+ 		</field-validator>
+ 		
+ 		<field-validator type="stringlength">
+ 			<param name="minLength">2</param>
+ 			<param name="maxLength">10</param>
+ 			<message>鐢ㄦ埛鍚嶆渶灏忛暱搴︿负2锛屾渶澶ч暱搴︿负10</message>
+ 		</field-validator>
+ 	</field>
+ 
+ 	<field name="password">
+ 		<field-validator type="requiredstring">
+ 			<message key="register.password.required"></message>
+ 		</field-validator>
+ 	</field>
+ 	
+ 	
+ 	<field name="url">
+ 		<field-validator type="url">
+ 			<message>URL鏍煎紡閿欒</message>
+ 		</field-validator>
+ 	</field>
+ 	
+ 	<field name="age">
+ 		<field-validator type="int">
+ 			<param name="min">1</param>
+ 			<param name="max">150</param>
+ 			<message>骞撮緞鏈�灏�1锛屾渶澶�150</message>
+ 		</field-validator>
+ 	</field>
+ 	
+ 	<field name="email">
+ 		<field-validator type="email">
+ 			<message>email鏍煎紡閿欒</message>
+ 		</field-validator>
+ 	</field>
+ 	
+ 	
+ </validators> 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true"/> <!-- 修改常量都是struts-defalut.xml中的 -->
+	<constant name="struts.i18n.encoding" value="gbk"/>
+	<constant name="struts.custom.i18n.resources" value="xwork-mess"/> <!-- 覆盖struts-core.jar下的default.properties中的struts.cusom.i18n.resources -->
+	<package name="example" namespace="/" extends="struts-default">
+		<action name="point" class="com.zyy.action.PointAction">
+			<result name="success">/Success.jsp</result>
+		</action>
+		
+		<action name="register" class="com.zyy.erraction.RegisterErrorAction">
+			<result name="input">/TestError.jsp</result> <!--  类型转换出错之后必须跳回input页面，这个input必须加 -->
+		</action>
+		
+	</package> 
+	
+</struts>

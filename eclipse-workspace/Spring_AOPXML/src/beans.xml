@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd    
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd    
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+        
+  <aop:config>
+  	<aop:aspect ref="logBeforeAdvice"> <!-- 声明一个切面 -->
+  		<aop:pointcut expression="execution(* com.zyy.dao.UserDao.*(..))" id="pc"/>  <!-- 声明一个切入点 -->
+  		<aop:before method="before" pointcut-ref="pc"/>   <!-- 声明通知 -->
+  	</aop:aspect>
+  	
+  	
+  	<aop:aspect ref="logAfterAdvice"> <!-- 声明一个切面 -->
+  		<aop:pointcut expression="execution(* com.zyy.dao.UserDao.*(..))" id="pc2"/>  <!-- 声明一个切入点 -->
+  		<aop:after method="afterReturning" pointcut-ref="pc2"/>   <!-- 声明通知 -->
+  	</aop:aspect>
+  	
+  <aop:aspect ref="logAroundAdvice"> <!-- 声明一个切面 -->
+  		<aop:pointcut expression="execution(* com.zyy.dao.UserDao.*(..))" id="pc3"/>  <!-- 声明一个切入点 -->
+  		<aop:around method="invoke" pointcut-ref="pc3"/>   <!-- 声明通知 -->
+  	</aop:aspect>
+  
+  </aop:config>
+   
+   <bean id="userDao" class="com.zyy.dao.impl.UserDaoImpl"/>
+   <bean id="logBeforeAdvice" class="com.zyy.aopapi.LogBeforeAdvice" />
+   <bean id="logAfterAdvice" class="com.zyy.aopapi.LogAfterAdvice"/>
+   
+   <bean id="logAroundAdvice" class="com.zyy.aopapi.LogAroundAdvice" />
+   <bean id="logThrowAdvice" class="com.zyy.aopapi.LogThrowAdvice" />
+   
+   
+</beans>
