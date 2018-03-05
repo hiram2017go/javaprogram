@@ -81,11 +81,11 @@ public class Attend implements Serializable {
         this.punchTime = punchTime;
     }
 
-    public boolean isCome() {
+    public boolean getIsCome() {
         return isCome;
     }
 
-    public void setCome(boolean come) {
+    public void setIsCome(boolean come) {
         isCome = come;
     }
 
