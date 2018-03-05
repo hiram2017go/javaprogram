@@ -21,10 +21,10 @@
    	<property name="target" ref="userDao" />  <!-- 这里是引用上面的 -->
    	<property name="interceptorNames">
    		<list>
-   			<!-- <value>logBeforeAdvice</value>
-   			<value>logAfterAdvice</value> -->
-   			<!-- <value>logAroundAdvice</value> -->
-   			<value>logThrowAdvice</value>
+   			<value>logBeforeAdvice</value>
+   			<value>logAfterAdvice</value>
+   			 <value>logAroundAdvice</value> 
+   			<!--<value>logThrowAdvice</value>-->
    		</list>
    	</property>
    </bean>
