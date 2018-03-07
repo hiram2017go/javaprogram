@@ -25,7 +25,6 @@ public class EmployeeDaoHibernate4 extends BaseDaoHibernate4<Employee> implement
      */
     @Override
     public Employee findByName(String name) {
-
         List<Employee> empList = find("select e from Employee e where e.name = ?0", name);
         if(empList != null && empList.size() > 0) return empList.get(0);
 
