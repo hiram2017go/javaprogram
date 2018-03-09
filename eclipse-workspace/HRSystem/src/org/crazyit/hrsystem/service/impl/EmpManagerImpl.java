@@ -7,13 +7,14 @@ import org.crazyit.hrsystem.vo.AttendBean;
 import org.crazyit.hrsystem.vo.PaymentBean;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
 public class EmpManagerImpl implements EmpManager {
 
-    private ApplicationDao appDap;
+    private ApplicationDao appDao;
     private AttendDao attendDao;
     private AttendTypeDao attendTypeDao;
     private CheckBackDao checkBackDao;
@@ -22,8 +23,8 @@ public class EmpManagerImpl implements EmpManager {
     private PaymentDao paymentDao;
 
     //以下注入所有Dao组件
-    public void setAppDap(ApplicationDao appDap) {
-        this.appDap = appDap;
+    public void setAppDao(ApplicationDao appDao) {
+        this.appDao = appDao;
     }
 
     public void setAttendDao(AttendDao attendDao) {
@@ -126,8 +127,8 @@ public class EmpManagerImpl implements EmpManager {
         }
     }
 
-    /**
-     * 验证某个员工是否打卡
+    /** 上下班打卡是punchTime都为null.
+     * 验证某个员工是否可打卡
      *
      * @param user    员工名
      * @param dutyDay 打卡日期
@@ -174,7 +175,7 @@ public class EmpManagerImpl implements EmpManager {
         if(attend == null) return PUNCH_FAIL;
 
         //已经打卡
-        if(attend.getPunchTime() == null) return  PUNCHED; //貌似打卡的这个值不为空，标识上下班的时候这里为空
+        if(attend.getPunchTime() == null) return  PUNCHED; //系统每天定时7点和13点为每个员工各插入一条旷工记录，但是punchtime为空。员工打卡时是修改那个时间
 
         System.out.print("嘀·已打卡~~~~~~~~~~~~~~~");
 
@@ -209,7 +210,19 @@ public class EmpManagerImpl implements EmpManager {
      */
     @Override
     public List<PaymentBean> empSalary(String empName) {
-        return null;
+
+        Employee emp = employeeDao.findByName(empName);
+        if(emp == null) return null;
+
+        //获取该员工的全部工资列表
+        List<Payment> payList = paymentDao.findByEmp(emp);
+        if(payList == null) return null;
+        List<PaymentBean> result = new ArrayList<PaymentBean>();
+        //封装VO集合
+        for(Payment p: payList){
+            result.add(new PaymentBean(p.getPayMonth(), p.getAmount()));
+        }
+        return result;
     }
 
     /**
@@ -220,7 +233,20 @@ public class EmpManagerImpl implements EmpManager {
      */
     @Override
     public List<AttendBean> unAttend(String empName) {
-        return null;
+        //找出正常上班
+        AttendType attendType = attendTypeDao.get(AttendType.class, 1);
+        Employee emp = employeeDao.findByName(empName);
+        if(emp == null) return null;
+        //找出非正常上班的出勤记录
+        List<Attend> attends = attendDao.findByEmpUnAttend(emp, attendType);
+        List<AttendBean> attendBeanList = new ArrayList<AttendBean>();
+
+        //封装VO集合
+        for(Attend att : attends){
+            attendBeanList.add(new AttendBean(att.getId(), att.getDutyDay(), att.getType().getName(), att.getPunchTime()));
+        }
+
+        return attendBeanList;
     }
 
     /**
@@ -230,7 +256,8 @@ public class EmpManagerImpl implements EmpManager {
      */
     @Override
     public List<AttendType> GetAllType() {
-        return null;
+
+        return attendTypeDao.findAll(AttendType.class);
     }
 
     /**
@@ -243,6 +270,22 @@ public class EmpManagerImpl implements EmpManager {
      */
     @Override
     public boolean addApplication(int attId, int typeId, String reason) {
-        return false;
+        System.out.println("-----------------attId:" + attId);
+        System.out.println("-----------------typeId:" + typeId);
+        System.out.println("-----------------reason:" + reason);
+        //创建一个申请
+        Application app = new Application();
+        //获取申请需要改变的出勤记录
+        Attend attend = attendDao.get(Attend.class, attId);
+        AttendType attendType = attendTypeDao.get(AttendType.class, typeId);
+        app.setAttend(attend);
+        app.setType(attendType);
+        if(reason != null){
+            app.setReason(reason);
+        }
+        appDao.save(app);
+        System.out.println("添加完成~~~~~~~~~~~");
+
+        return true;
     }
 }

@@ -20,29 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SalaryBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/vo/SalaryBean.java">
+      <file leaf-file-name="MgrManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/MgrManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-              <folding>
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/PaymentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="945">
+              <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,65 +32,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/EmployeeDao.java">
+      <file leaf-file-name="MgrManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/impl/MgrManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Payment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Payment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Employee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1265">
-              <caret line="124" column="38" lean-forward="false" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmpManagerImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/impl/EmpManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="144" column="73" lean-forward="true" selection-start-line="144" selection-start-column="73" selection-end-line="144" selection-end-column="73" />
+            <state relative-caret-position="171">
+              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#930#931#0" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
-                <element signature="e#1195#1196#0" expanded="true" />
-                <element signature="e#1243#1244#0" expanded="true" />
-                <element signature="e#1279#1280#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1379#1380#0" expanded="true" />
-                <element signature="e#6211#6212#0" expanded="true" />
-                <element signature="e#6238#6239#0" expanded="true" />
-                <element signature="e#6411#6412#0" expanded="true" />
-                <element signature="e#6438#6439#0" expanded="true" />
-                <element signature="e#6550#6551#0" expanded="true" />
-                <element signature="e#6577#6578#0" expanded="true" />
-                <element signature="e#6805#6806#0" expanded="true" />
-                <element signature="e#6833#6834#0" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#895#896#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#970#971#0" expanded="true" />
+                <element signature="e#1002#1003#0" expanded="true" />
+                <element signature="e#1055#1056#0" expanded="true" />
+                <element signature="e#1097#1098#0" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
+                <element signature="e#1180#1181#0" expanded="true" />
+                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#1295#1296#0" expanded="true" />
+                <element signature="e#1333#1334#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
+                <element signature="e#1411#1412#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
+                <element signature="e#1484#1485#0" expanded="true" />
+                <element signature="e#1513#1514#0" expanded="true" />
+                <element signature="e#1561#1562#0" expanded="true" />
+                <element signature="e#1597#1598#0" expanded="true" />
+                <element signature="e#1642#1643#0" expanded="true" />
+                <element signature="e#1677#1678#0" expanded="true" />
+                <element signature="e#1739#1740#0" expanded="true" />
+                <element signature="e#1787#1788#0" expanded="true" />
+                <element signature="e#1828#1829#0" expanded="true" />
+                <element signature="e#1861#1862#0" expanded="true" />
+                <element signature="e#1917#1918#0" expanded="true" />
+                <element signature="e#1961#1962#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,8 +75,30 @@
       <file leaf-file-name="EmpManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/EmpManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="914">
-              <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+            <state relative-caret-position="567">
+              <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daoContext.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/daoContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+              <folding>
+                <element signature="n#bean#0;n#beans#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/AttendDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,15 +106,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttendType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/AttendType.java">
+      <file leaf-file-name="AttendDaoHibernate4.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/AttendDaoHibernate4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="405">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
-                <element signature="e#1201#1202#0" expanded="true" />
-                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmpManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/impl/EmpManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#1177#1178#0" expanded="true" />
+                <element signature="e#1223#1224#0" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
+                <element signature="e#1307#1308#0" expanded="true" />
+                <element signature="e#1363#1364#0" expanded="true" />
+                <element signature="e#1407#1408#0" expanded="true" />
+                <element signature="e#6560#6573#0" expanded="true" />
+                <element signature="e#7249#7261#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,10 +159,29 @@
       <file leaf-file-name="BaseDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/BaseDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="837">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseDaoHibernate4.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/impl/BaseDaoHibernate4.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="30" />
+              <folding>
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#1282#1283#0" expanded="true" />
+                <element signature="e#1358#1359#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1479#1480#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,6 +203,7 @@
       <find>isCome</find>
       <find>daotemplate</find>
       <find>sessionfa</find>
+      <find>tSessionFactory</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,19 +220,14 @@
         <option value="$PROJECT_DIR$/../../../codes/10/HRSystem_Eclipse/WebContent/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Entity.class" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/AttendType.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/CheckBack.java" />
-        <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Application.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Payment.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Manager.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Employee.java" />
-        <option value="$PROJECT_DIR$/src/org/crazyit/common/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/lib/spring-orm-4.3.14.RELEASE.jar!/org/springframework/orm/hibernate4/HibernateTemplate.class" />
         <option value="$PROJECT_DIR$/src/org/crazyit/common/dao/impl/BaseDaoHibernate3.java" />
-        <option value="$PROJECT_DIR$/src/org/crazyit/common/dao/impl/BaseDaoHibernate4.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/ApplicationDao.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/ApplicationDaoHibernate4.java" />
-        <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/AttendDao.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Attend.java" />
-        <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/AttendDaoHibernate4.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/AttendTypeDao.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/CheckBackDao.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/AttendTypeDaoHibernate4.java" />
@@ -206,14 +238,23 @@
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/PaymentDaoHibernate4.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/PaymentDao.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/EmployeeDaoHibernate4.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/daoContext.xml" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/vo/AppBean.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/vo/AttendBean.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/vo/EmpBean.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/vo/PaymentBean.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/vo/SalaryBean.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/service/EmpManager.java" />
+        <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/exception/HrException.java" />
+        <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/service/MgrManager.java" />
+        <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Application.java" />
+        <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/service/impl/MgrManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/AttendDao.java" />
+        <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/AttendDaoHibernate4.java" />
         <option value="$PROJECT_DIR$/src/org/crazyit/hrsystem/service/impl/EmpManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/org/crazyit/common/dao/impl/BaseDaoHibernate4.java" />
+        <option value="$PROJECT_DIR$/src/org/crazyit/common/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/daoContext.xml" />
       </list>
     </option>
   </component>
@@ -231,8 +272,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="372" />
-    <option name="y" value="59" />
+    <option name="x" value="801" />
+    <option name="y" value="301" />
     <option name="width" value="1227" />
     <option name="height" value="777" />
   </component>
@@ -243,7 +284,7 @@
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="false" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
@@ -254,7 +295,6 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -271,20 +311,39 @@
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="crazyit" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -292,6 +351,7 @@
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
               <item name="hrsystem" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -299,6 +359,7 @@
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
               <item name="hrsystem" type="462c0819:PsiDirectoryNode" />
               <item name="Dao" type="462c0819:PsiDirectoryNode" />
@@ -307,6 +368,7 @@
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
               <item name="hrsystem" type="462c0819:PsiDirectoryNode" />
               <item name="Dao" type="462c0819:PsiDirectoryNode" />
@@ -316,6 +378,7 @@
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
               <item name="hrsystem" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
@@ -324,6 +387,7 @@
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
               <item name="hrsystem" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
@@ -332,6 +396,7 @@
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
               <item name="hrsystem" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
@@ -341,6 +406,7 @@
               <item name="HRSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HRSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="crazyit" type="462c0819:PsiDirectoryNode" />
               <item name="hrsystem" type="462c0819:PsiDirectoryNode" />
               <item name="vo" type="462c0819:PsiDirectoryNode" />
@@ -360,12 +426,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="node" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="configurable.stylesheets" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -558,16 +625,17 @@
       <workItem from="1520127948314" duration="21437000" />
       <workItem from="1520211656168" duration="14425000" />
       <workItem from="1520297994739" duration="2112000" />
-      <workItem from="1520384851980" duration="10910000" />
+      <workItem from="1520384851980" duration="11368000" />
+      <workItem from="1520477223209" duration="14446000" />
+      <workItem from="1520556867014" duration="2703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50543000" />
+    <option name="totallyTimeSpent" value="68150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -579,7 +647,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11186114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11121857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -613,103 +681,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/AttendType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#948#949#0" expanded="false" />
-            <element signature="e#973#974#0" expanded="false" />
-            <element signature="e#1010#1011#0" expanded="false" />
-            <element signature="e#1038#1039#0" expanded="false" />
-            <element signature="e#1069#1070#0" expanded="false" />
-            <element signature="e#1096#1097#0" expanded="false" />
-            <element signature="e#1136#1137#0" expanded="false" />
-            <element signature="e#1168#1169#0" expanded="false" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="false" />
-            <element signature="e#1310#1311#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2862">
-          <caret line="140" column="25" lean-forward="true" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1775#1776#0" expanded="false" />
-            <element signature="e#1805#1806#0" expanded="false" />
-            <element signature="e#1856#1857#0" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-            <element signature="e#1935#1936#0" expanded="false" />
-            <element signature="e#1966#1967#0" expanded="false" />
-            <element signature="e#2020#2021#0" expanded="false" />
-            <element signature="e#2060#2061#0" expanded="false" />
-            <element signature="e#2090#2091#0" expanded="false" />
-            <element signature="e#2115#2116#0" expanded="false" />
-            <element signature="e#2152#2153#0" expanded="false" />
-            <element signature="e#2180#2181#0" expanded="false" />
-            <element signature="e#2211#2212#0" expanded="false" />
-            <element signature="e#2238#2239#0" expanded="false" />
-            <element signature="e#2278#2279#0" expanded="false" />
-            <element signature="e#2310#2311#0" expanded="false" />
-            <element signature="e#2341#2342#0" expanded="false" />
-            <element signature="e#2368#2369#0" expanded="false" />
-            <element signature="e#2408#2409#0" expanded="false" />
-            <element signature="e#2440#2441#0" expanded="false" />
-            <element signature="e#2473#2474#0" expanded="false" />
-            <element signature="e#2502#2503#0" expanded="false" />
-            <element signature="e#2546#2547#0" expanded="false" />
-            <element signature="e#2582#2583#0" expanded="false" />
-            <element signature="e#2617#2618#0" expanded="false" />
-            <element signature="e#2647#2648#0" expanded="false" />
-            <element signature="e#2694#2695#0" expanded="false" />
-            <element signature="e#2732#2733#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/impl/BaseDaoHibernate3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="48" column="15" lean-forward="false" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#535#536#0" expanded="false" />
-            <element signature="e#601#602#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-            <element signature="e#726#727#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-            <element signature="e#835#836#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#938#939#0" expanded="false" />
-            <element signature="e#1017#1018#0" expanded="false" />
-            <element signature="e#1061#1062#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/ApplicationDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +693,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -726,19 +711,8 @@
         <state relative-caret-position="675">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1141#1142#0" expanded="false" />
-            <element signature="e#1173#1174#0" expanded="false" />
             <element signature="e#1216#1217#0" expanded="false" />
             <element signature="e#1248#1249#0" expanded="false" />
-            <element signature="e#1305#1306#0" expanded="false" />
-            <element signature="e#1347#1348#0" expanded="false" />
-            <element signature="e#1388#1389#0" expanded="false" />
-            <element signature="e#1417#1418#0" expanded="false" />
-            <element signature="e#1469#1470#0" expanded="false" />
-            <element signature="e#1505#1506#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -748,31 +722,12 @@
         <state relative-caret-position="513">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1459#1460#0" expanded="false" />
-            <element signature="e#1484#1485#0" expanded="false" />
-            <element signature="e#1521#1522#0" expanded="false" />
-            <element signature="e#1549#1550#0" expanded="false" />
-            <element signature="e#1583#1584#0" expanded="false" />
-            <element signature="e#1613#1614#0" expanded="false" />
-            <element signature="e#1659#1660#0" expanded="false" />
-            <element signature="e#1697#1698#0" expanded="false" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#1811#1812#0" expanded="false" />
-            <element signature="e#1853#1854#0" expanded="false" />
-            <element signature="e#1887#1888#0" expanded="false" />
-            <element signature="e#1916#1917#0" expanded="false" />
-            <element signature="e#1959#1960#0" expanded="false" />
-            <element signature="e#1988#1989#0" expanded="false" />
-            <element signature="e#2023#2024#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
-            <element signature="e#2126#2127#0" expanded="true" />
-            <element signature="e#2163#2164#0" expanded="false" />
-            <element signature="e#2194#2195#0" expanded="false" />
-            <element signature="e#2244#2245#0" expanded="false" />
-            <element signature="e#2284#2285#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1763#1764#0" expanded="false" />
+            <element signature="e#2023#2024#0" expanded="false" />
+            <element signature="e#2050#2051#0" expanded="false" />
+            <element signature="e#2094#2095#0" expanded="false" />
+            <element signature="e#2126#2127#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -790,7 +745,30 @@
         <state relative-caret-position="90">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1453#1454#0" expanded="false" />
+            <element signature="e#1478#1479#0" expanded="false" />
+            <element signature="e#1515#1516#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1576#1577#0" expanded="false" />
+            <element signature="e#1605#1606#0" expanded="false" />
+            <element signature="e#1649#1650#0" expanded="false" />
+            <element signature="e#1685#1686#0" expanded="false" />
+            <element signature="e#1721#1722#0" expanded="false" />
+            <element signature="e#1750#1751#0" expanded="false" />
+            <element signature="e#1797#1798#0" expanded="false" />
+            <element signature="e#1833#1834#0" expanded="false" />
+            <element signature="e#1866#1867#0" expanded="false" />
+            <element signature="e#1895#1896#0" expanded="false" />
+            <element signature="e#1939#1940#0" expanded="false" />
+            <element signature="e#1975#1976#0" expanded="false" />
+            <element signature="e#2010#2011#0" expanded="false" />
+            <element signature="e#2037#2038#0" expanded="false" />
+            <element signature="e#2081#2082#0" expanded="false" />
+            <element signature="e#2113#2114#0" expanded="false" />
+            <element signature="e#2148#2149#0" expanded="false" />
+            <element signature="e#2176#2177#0" expanded="false" />
+            <element signature="e#2221#2222#0" expanded="false" />
+            <element signature="e#2255#2256#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -799,85 +777,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1775#1776#0" expanded="false" />
-            <element signature="e#1805#1806#0" expanded="false" />
-            <element signature="e#1856#1857#0" expanded="false" />
-            <element signature="e#1894#1895#0" expanded="false" />
-            <element signature="e#1935#1936#0" expanded="false" />
-            <element signature="e#1966#1967#0" expanded="false" />
-            <element signature="e#2020#2021#0" expanded="false" />
-            <element signature="e#2060#2061#0" expanded="false" />
-            <element signature="e#2090#2091#0" expanded="false" />
-            <element signature="e#2115#2116#0" expanded="false" />
-            <element signature="e#2152#2153#0" expanded="false" />
-            <element signature="e#2180#2181#0" expanded="false" />
-            <element signature="e#2211#2212#0" expanded="false" />
-            <element signature="e#2238#2239#0" expanded="false" />
-            <element signature="e#2278#2279#0" expanded="false" />
-            <element signature="e#2310#2311#0" expanded="false" />
-            <element signature="e#2341#2342#0" expanded="false" />
-            <element signature="e#2368#2369#0" expanded="false" />
-            <element signature="e#2408#2409#0" expanded="false" />
-            <element signature="e#2440#2441#0" expanded="false" />
-            <element signature="e#2473#2474#0" expanded="false" />
-            <element signature="e#2502#2503#0" expanded="false" />
-            <element signature="e#2546#2547#0" expanded="false" />
-            <element signature="e#2582#2583#0" expanded="false" />
-            <element signature="e#2617#2618#0" expanded="false" />
-            <element signature="e#2647#2648#0" expanded="false" />
-            <element signature="e#2694#2695#0" expanded="false" />
-            <element signature="e#2732#2733#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../codes/10/HRSystem_Eclipse/WebContent/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Table.class" />
     <entry file="jar://$PROJECT_DIR$/../../../codes/10/HRSystem_Eclipse/WebContent/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Entity.class" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1074#1075#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1141#1142#0" expanded="false" />
-            <element signature="e#1173#1174#0" expanded="false" />
-            <element signature="e#1216#1217#0" expanded="false" />
-            <element signature="e#1248#1249#0" expanded="false" />
-            <element signature="e#1305#1306#0" expanded="false" />
-            <element signature="e#1347#1348#0" expanded="false" />
-            <element signature="e#1388#1389#0" expanded="false" />
-            <element signature="e#1417#1418#0" expanded="false" />
-            <element signature="e#1469#1470#0" expanded="false" />
-            <element signature="e#1505#1506#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/impl/BaseDaoHibernate3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="48" column="15" lean-forward="false" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#535#536#0" expanded="false" />
-            <element signature="e#601#602#0" expanded="false" />
-            <element signature="e#668#669#0" expanded="false" />
-            <element signature="e#726#727#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-            <element signature="e#835#836#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-            <element signature="e#938#939#0" expanded="false" />
-            <element signature="e#1017#1018#0" expanded="false" />
-            <element signature="e#1061#1062#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/CheckBack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
@@ -902,14 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/impl/BaseDaoHibernate4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/spring-orm-4.3.14.RELEASE.jar!/org/springframework/orm/hibernate4/HibernateTransactionManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -917,250 +815,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/spring-orm-4.3.14.RELEASE.jar!/org/springframework/orm/hibernate4/HibernateTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="55" column="42" lean-forward="false" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
-          <folding>
-            <marker date="1520211506382" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1520211506382" expanded="false" signature="158:1256" ph="..." />
-            <marker date="1520211506382" expanded="true" signature="1758:1765" ph="{}" />
-            <marker date="1520211506382" expanded="true" signature="1827:1917" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="1983:1994" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="2031:2037" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="2084:2095" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="2122:2128" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="2183:2194" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="2225:2231" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="2269:2280" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="2304:2310" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="2379:2390" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="2437:2443" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="2487:2498" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="2530:2536" ph=" }" />
-            <marker date="1520211506382" expanded="true" signature="2608:2673" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="2718:2729" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="2762:2768" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="2823:2834" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="2867:2873" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="2910:2921" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="2946:2952" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="3014:3025" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="3066:3072" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="3113:3124" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="3153:3159" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="3204:3215" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="3242:3248" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="3279:3290" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="3312:3318" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="3365:3376" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="3405:3411" ph=" }" />
-            <marker date="1520211506382" expanded="false" signature="3443:3454" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="3477:3483" ph=" }" />
-            <marker date="1520211506382" expanded="true" signature="3522:3676" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="3759:3812" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="3884:3895" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="3931:3937" ph=" }" />
-            <marker date="1520211506382" expanded="true" signature="4055:5284" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="5344:5530" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="5582:5939" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="5992:6350" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="6439:6511" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="6637:6954" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="6684:6792" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="6931:6946" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="7041:7113" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="7237:7562" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="7284:7402" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="7539:7554" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="7652:7725" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="7852:8171" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="7899:8007" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="8148:8163" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="8259:8332" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="8457:8784" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="8504:8622" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="8761:8776" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="8872:9334" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="8925:9045" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="9311:9326" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="9428:9689" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="9468:9586" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="9666:9681" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="9757:9810" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="9909:10329" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="9949:10067" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="10306:10321" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="10407:10638" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="10463:10557" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="10615:10630" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="10710:10968" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="10750:10868" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="10945:10960" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="11038:11231" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="11312:11572" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="11668:11969" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="11708:11826" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="11946:11961" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="12090:12403" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="12130:12248" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="12380:12395" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="12482:12826" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="12543:12673" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="12803:12818" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="12930:13286" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="12991:13121" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="13263:13278" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="13353:13413" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="13511:13991" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="13551:13669" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="13968:13983" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="14077:14141" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="14264:14768" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="14304:14422" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="14745:14760" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="14847:15188" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="14887:15005" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="15165:15180" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="15292:15645" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="15332:15450" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="15622:15637" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="15760:16115" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="15800:15918" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="16092:16107" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="16255:16622" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="16295:16413" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="16599:16614" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="16696:17032" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="16736:16854" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="17009:17024" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="17131:17479" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="17171:17289" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="17456:17471" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="17547:17856" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="17594:17702" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="17833:17848" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="17949:18270" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="17996:18104" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="18247:18262" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="18337:18397" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="18495:18975" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="18535:18653" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="18952:18967" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="19061:19125" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="19248:19752" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="19288:19406" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="19729:19744" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="19837:20338" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="19877:19995" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="20315:20330" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="20391:20643" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="20431:20549" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="20620:20635" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="20696:20922" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="20736:20828" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="20899:20914" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="21025:21613" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="21078:21198" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="21590:21605" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="21730:21834" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="21975:22850" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="22211:22335" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="22813:22832" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="22964:23402" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="23017:23137" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="23379:23394" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="23515:24103" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="23568:23688" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="24080:24095" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="24231:24346" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="24498:25413" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="24645:24769" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="25247:25266" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="25538:25976" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="25591:25711" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="25953:25968" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="26066:26127" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="26268:27007" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="26392:26512" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="26984:26999" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="27090:27169" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="27271:27348" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="27464:27560" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="27719:28599" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="27846:27966" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="28576:28591" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="28709:29312" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="28766:28894" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="29289:29304" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="29387:29572" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="29677:30277" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="29733:29853" ph="doInHibernate(session) → {" />
-            <marker date="1520211506382" expanded="false" signature="30254:30269" ph="}" />
-            <marker date="1520211506382" expanded="true" signature="30384:30733" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="30786:31526" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="31582:32307" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="32432:32768" ph="{...}" />
-            <marker date="1520211506382" expanded="true" signature="32851:34011" ph="{...}" />
-            <marker date="1520211506382" expanded="false" signature="32956:32971" ph=" { " />
-            <marker date="1520211506382" expanded="false" signature="32992:33002" ph=" }" />
-            <marker date="1520211506382" expanded="true" signature="33094:34005" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/ManagerDaoHibernate4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/PaymentDaoHibernate4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="30" column="60" lean-forward="false" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/daoContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/impl/EmpManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/impl/EmpManager.java" />
     <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/CheckBackDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1189,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1197,27 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/AttendDaoHibernate4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/AttendDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1225,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1234,16 +873,8 @@
         <state relative-caret-position="536">
           <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,25 +883,25 @@
         <state relative-caret-position="-216">
           <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="false" />
+            <element signature="e#649#650#0" expanded="false" />
+            <element signature="e#677#678#0" expanded="false" />
+            <element signature="e#707#708#0" expanded="false" />
+            <element signature="e#733#734#0" expanded="false" />
+            <element signature="e#771#772#0" expanded="false" />
+            <element signature="e#801#802#0" expanded="false" />
+            <element signature="e#836#837#0" expanded="false" />
+            <element signature="e#867#868#0" expanded="false" />
+            <element signature="e#915#916#0" expanded="false" />
+            <element signature="e#955#956#0" expanded="false" />
+            <element signature="e#990#991#0" expanded="false" />
+            <element signature="e#1021#1022#0" expanded="false" />
+            <element signature="e#1069#1070#0" expanded="false" />
+            <element signature="e#1109#1110#0" expanded="false" />
+            <element signature="e#1142#1143#0" expanded="false" />
+            <element signature="e#1171#1172#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+            <element signature="e#1251#1252#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1280,22 +911,22 @@
         <state relative-caret-position="648">
           <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#563#564#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
+            <element signature="e#624#625#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#688#689#0" expanded="false" />
+            <element signature="e#734#735#0" expanded="false" />
+            <element signature="e#772#773#0" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+            <element signature="e#834#835#0" expanded="false" />
+            <element signature="e#878#879#0" expanded="false" />
+            <element signature="e#914#915#0" expanded="false" />
+            <element signature="e#943#944#0" expanded="false" />
+            <element signature="e#970#971#0" expanded="false" />
+            <element signature="e#1008#1009#0" expanded="false" />
+            <element signature="e#1040#1041#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1305,18 +936,18 @@
         <state relative-caret-position="189">
           <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding>
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="false" />
+            <element signature="e#510#511#0" expanded="false" />
+            <element signature="e#556#557#0" expanded="false" />
+            <element signature="e#594#595#0" expanded="false" />
+            <element signature="e#628#629#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#704#705#0" expanded="false" />
+            <element signature="e#742#743#0" expanded="false" />
+            <element signature="e#775#776#0" expanded="false" />
+            <element signature="e#804#805#0" expanded="false" />
+            <element signature="e#848#849#0" expanded="false" />
+            <element signature="e#884#885#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1326,33 +957,23 @@
         <state relative-caret-position="486">
           <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding>
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#500#501#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="false" />
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#682#683#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/PaymentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="432">
           <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1367,15 +988,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Payment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="540">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1265">
+        <state relative-caret-position="2430">
           <caret line="124" column="38" lean-forward="false" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
           <folding />
         </state>
@@ -1386,24 +1007,24 @@
         <state relative-caret-position="297">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1230#1231#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/vo/SalaryBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
+        <state relative-caret-position="0">
           <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="false" />
+            <element signature="e#489#490#0" expanded="false" />
+            <element signature="e#527#528#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+            <element signature="e#589#590#0" expanded="false" />
+            <element signature="e#633#634#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1413,20 +1034,184 @@
         <state relative-caret-position="333">
           <caret line="95" column="16" lean-forward="false" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
           <folding>
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1763#1764#0" expanded="true" />
-            <element signature="e#2023#2024#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
-            <element signature="e#2126#2127#0" expanded="true" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1763#1764#0" expanded="false" />
+            <element signature="e#2023#2024#0" expanded="false" />
+            <element signature="e#2050#2051#0" expanded="false" />
+            <element signature="e#2094#2095#0" expanded="false" />
+            <element signature="e#2126#2127#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/PaymentDaoHibernate4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="30" column="60" lean-forward="false" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/ManagerDaoHibernate4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="46" column="25" lean-forward="false" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <element signature="e#1216#1217#0" expanded="false" />
+            <element signature="e#1248#1249#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/exception/HrException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#155#156#0" expanded="false" />
+            <element signature="e#181#182#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/domain/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="e#1453#1454#0" expanded="false" />
+            <element signature="e#1478#1479#0" expanded="false" />
+            <element signature="e#1515#1516#0" expanded="false" />
+            <element signature="e#1543#1544#0" expanded="false" />
+            <element signature="e#1576#1577#0" expanded="false" />
+            <element signature="e#1605#1606#0" expanded="false" />
+            <element signature="e#1649#1650#0" expanded="false" />
+            <element signature="e#1685#1686#0" expanded="false" />
+            <element signature="e#1721#1722#0" expanded="false" />
+            <element signature="e#1750#1751#0" expanded="false" />
+            <element signature="e#1797#1798#0" expanded="false" />
+            <element signature="e#1833#1834#0" expanded="false" />
+            <element signature="e#1866#1867#0" expanded="false" />
+            <element signature="e#1895#1896#0" expanded="false" />
+            <element signature="e#1939#1940#0" expanded="false" />
+            <element signature="e#1975#1976#0" expanded="false" />
+            <element signature="e#2010#2011#0" expanded="false" />
+            <element signature="e#2037#2038#0" expanded="false" />
+            <element signature="e#2081#2082#0" expanded="false" />
+            <element signature="e#2113#2114#0" expanded="false" />
+            <element signature="e#2148#2149#0" expanded="false" />
+            <element signature="e#2176#2177#0" expanded="false" />
+            <element signature="e#2221#2222#0" expanded="false" />
+            <element signature="e#2255#2256#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/spring-orm-4.3.14.RELEASE.jar!/org/springframework/orm/hibernate4/support/HibernateDaoSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/impl/BaseDaoHibernate3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/AttendDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/MgrManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/EmpManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="567">
+          <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/impl/MgrManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1411#1412#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1561#1562#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1677#1678#0" expanded="true" />
+            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1861#1862#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#1961#1962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1435,32 +1220,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/service/impl/EmpManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="144" column="73" lean-forward="true" selection-start-line="144" selection-start-column="73" selection-end-line="144" selection-end-column="73" />
+        <state relative-caret-position="189">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#6560#6573#0" expanded="true" />
+            <element signature="e#7249#7261#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/common/dao/impl/BaseDaoHibernate4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="e#718#719#0" expanded="true" />
             <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#6211#6212#0" expanded="true" />
-            <element signature="e#6238#6239#0" expanded="true" />
-            <element signature="e#6411#6412#0" expanded="true" />
-            <element signature="e#6438#6439#0" expanded="true" />
-            <element signature="e#6550#6551#0" expanded="true" />
-            <element signature="e#6577#6578#0" expanded="true" />
-            <element signature="e#6805#6806#0" expanded="true" />
-            <element signature="e#6833#6834#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/crazyit/hrsystem/Dao/impl/AttendDaoHibernate4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/daoContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+          <folding>
+            <element signature="n#bean#0;n#beans#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

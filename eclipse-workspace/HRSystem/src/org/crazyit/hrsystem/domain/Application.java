@@ -54,4 +54,52 @@ public class Application implements Serializable {
         this.type = type;
         this.check = check;
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
+    public boolean getIsResult() {
+        return result;
+    }
+
+    public void setIsResult(boolean result) {
+        this.result = result;
+    }
+
+    public Attend getAttend() {
+        return attend;
+    }
+
+    public void setAttend(Attend attend) {
+        this.attend = attend;
+    }
+
+    public AttendType getType() {
+        return type;
+    }
+
+    public void setType(AttendType type) {
+        this.type = type;
+    }
+
+    public CheckBack getCheck() {
+        return check;
+    }
+
+    public void setCheck(CheckBack check) {
+        this.check = check;
+    }
 }

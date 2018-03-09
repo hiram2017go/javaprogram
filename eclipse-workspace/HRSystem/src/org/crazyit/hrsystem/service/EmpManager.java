@@ -67,7 +67,7 @@ public interface EmpManager {
 
 
     /**
-     * 验证某个员工是否打卡
+     * 验证某个员工是否可打卡
      * @param user 员工名
      * @param dutyDay 打卡日期
      * @return 可打卡的类别

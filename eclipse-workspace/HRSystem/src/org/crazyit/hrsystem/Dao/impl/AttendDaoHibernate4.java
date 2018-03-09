@@ -11,6 +11,7 @@ import java.util.Calendar;
 import java.util.List;
 
 public class AttendDaoHibernate4 extends BaseDaoHibernate4<Attend> implements AttendDao{
+    private String x;
     /**
      * 根据员工、月份查询该员工的出勤记录
      *
