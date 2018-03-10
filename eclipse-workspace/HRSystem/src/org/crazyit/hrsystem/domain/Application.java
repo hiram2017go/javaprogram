@@ -71,11 +71,11 @@ public class Application implements Serializable {
         this.reason = reason;
     }
 
-    public boolean getIsResult() {
+    public boolean getResult() {
         return result;
     }
 
-    public void setIsResult(boolean result) {
+    public void setResult(boolean result) {
         this.result = result;
     }
 

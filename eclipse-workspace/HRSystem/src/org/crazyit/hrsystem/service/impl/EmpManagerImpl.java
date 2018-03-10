@@ -16,39 +16,69 @@ public class EmpManagerImpl implements EmpManager {
 
     private ApplicationDao appDao;
     private AttendDao attendDao;
-    private AttendTypeDao attendTypeDao;
-    private CheckBackDao checkBackDao;
-    private EmployeeDao employeeDao;
+    private AttendTypeDao typeDao;
+    private CheckBackDao checkDao;
+    private EmployeeDao empDao;
     private ManagerDao mgrDao;
-    private PaymentDao paymentDao;
+    private PaymentDao payDao;
 
     //以下注入所有Dao组件
+
+
+    public ApplicationDao getAppDao() {
+        return appDao;
+    }
+
     public void setAppDao(ApplicationDao appDao) {
         this.appDao = appDao;
+    }
+
+    public AttendDao getAttendDao() {
+        return attendDao;
     }
 
     public void setAttendDao(AttendDao attendDao) {
         this.attendDao = attendDao;
     }
 
-    public void setAttendTypeDao(AttendTypeDao attendTypeDao) {
-        this.attendTypeDao = attendTypeDao;
+    public AttendTypeDao getTypeDao() {
+        return typeDao;
     }
 
-    public void setCheckBackDao(CheckBackDao checkBackDao) {
-        this.checkBackDao = checkBackDao;
+    public void setTypeDao(AttendTypeDao typeDao) {
+        this.typeDao = typeDao;
     }
 
-    public void setEmployeeDao(EmployeeDao employeeDao) {
-        this.employeeDao = employeeDao;
+    public CheckBackDao getCheckDao() {
+        return checkDao;
+    }
+
+    public void setCheckDao(CheckBackDao checkDao) {
+        this.checkDao = checkDao;
+    }
+
+    public EmployeeDao getEmpDao() {
+        return empDao;
+    }
+
+    public void setEmpDao(EmployeeDao empDao) {
+        this.empDao = empDao;
+    }
+
+    public ManagerDao getMgrDao() {
+        return mgrDao;
     }
 
     public void setMgrDao(ManagerDao mgrDao) {
         this.mgrDao = mgrDao;
     }
 
-    public void setPaymentDao(PaymentDao paymentDao) {
-        this.paymentDao = paymentDao;
+    public PaymentDao getPayDao() {
+        return payDao;
+    }
+
+    public void setPayDao(PaymentDao payDao) {
+        this.payDao = payDao;
     }
 
     /**
@@ -63,7 +93,7 @@ public class EmpManagerImpl implements EmpManager {
         if(mgrDao.findByNameAndPass(mgr).size() > 0) return  LOGIN_MGR;
 
         //如果找到普通员工，则以普通员工身份登录
-        if(employeeDao.findByNameAndPass(mgr).size() > 0) return LOGIN_EMP;
+        if(empDao.findByNameAndPass(mgr).size() > 0) return LOGIN_EMP;
 
         return LOGIN_FAIL;
     }
@@ -75,11 +105,11 @@ public class EmpManagerImpl implements EmpManager {
     public void autoPunch() {
         System.out.println("自动插入旷工记录");
 
-        List<Employee> empList = employeeDao.findAll(Employee.class);
+        List<Employee> empList = empDao.findAll(Employee.class);
         String dutyDay = new Date(System.currentTimeMillis()).toString();
 
         for (Employee e : empList){
-            AttendType attendType = attendTypeDao.get(AttendType.class, 6);
+            AttendType attendType = typeDao.get(AttendType.class, 6);
             Attend attend = new Attend();
             attend.setDutyDay(dutyDay);
             attend.setEmployee(e);
@@ -98,7 +128,7 @@ public class EmpManagerImpl implements EmpManager {
     public void autoPay() {
         System.out.println("自动插入工资结算");
 
-        List<Employee> empList = employeeDao.findAll(Employee.class);
+        List<Employee> empList = empDao.findAll(Employee.class);
 
         //获取上个月时间
         Calendar c = Calendar.getInstance();
@@ -123,7 +153,7 @@ public class EmpManagerImpl implements EmpManager {
             payment.setEmployee(e);
             payment.setAmount(amount);
 
-            paymentDao.save(payment);
+            payDao.save(payment);
         }
     }
 
@@ -138,7 +168,7 @@ public class EmpManagerImpl implements EmpManager {
     public int validPunch(String user, String dutyDay) {
 
         //查询不到此员工，说明不能打卡
-        Employee emp = employeeDao.findByName(user);
+        Employee emp = empDao.findByName(user);
         if(emp == null) return  NO_PUNCH;
 
         //找到员工的出勤记录
@@ -167,7 +197,7 @@ public class EmpManagerImpl implements EmpManager {
      */
     @Override
     public int punch(String user, String dutyDay, boolean isCome) {
-        Employee emp = employeeDao.findByName(user);
+        Employee emp = empDao.findByName(user);
         if(emp == null) return PUNCH_FAIL;
 
         //找到该员工当前时间的出勤记录
@@ -185,17 +215,17 @@ public class EmpManagerImpl implements EmpManager {
         if(isCome){
             //9点之前算正常
             if(punchHour < COME_LIMIT){
-                attend.setType(attendTypeDao.get(AttendType.class, 1));
+                attend.setType(typeDao.get(AttendType.class, 1));
             }else if(punchHour < LATE_LIMIT){  //9~11点算迟到
-                attend.setType(attendTypeDao.get(AttendType.class, 4));
+                attend.setType(typeDao.get(AttendType.class, 4));
             }
             //11点之后算旷工，不登记
         }else{
             //18点之后算正常
             if(punchHour >= LEAVE_LIMIT){
-                attend.setType(attendTypeDao.get(AttendType.class, 1));
+                attend.setType(typeDao.get(AttendType.class, 1));
             }else if(punchHour >= EARLY_LIMIE){
-                attend.setType(attendTypeDao.get(AttendType.class, 5)); //16~18点算早退
+                attend.setType(typeDao.get(AttendType.class, 5)); //16~18点算早退
             }
         }
         attendDao.update(attend);
@@ -211,11 +241,11 @@ public class EmpManagerImpl implements EmpManager {
     @Override
     public List<PaymentBean> empSalary(String empName) {
 
-        Employee emp = employeeDao.findByName(empName);
+        Employee emp = empDao.findByName(empName);
         if(emp == null) return null;
 
         //获取该员工的全部工资列表
-        List<Payment> payList = paymentDao.findByEmp(emp);
+        List<Payment> payList = payDao.findByEmp(emp);
         if(payList == null) return null;
         List<PaymentBean> result = new ArrayList<PaymentBean>();
         //封装VO集合
@@ -234,8 +264,8 @@ public class EmpManagerImpl implements EmpManager {
     @Override
     public List<AttendBean> unAttend(String empName) {
         //找出正常上班
-        AttendType attendType = attendTypeDao.get(AttendType.class, 1);
-        Employee emp = employeeDao.findByName(empName);
+        AttendType attendType = typeDao.get(AttendType.class, 1);
+        Employee emp = empDao.findByName(empName);
         if(emp == null) return null;
         //找出非正常上班的出勤记录
         List<Attend> attends = attendDao.findByEmpUnAttend(emp, attendType);
@@ -257,7 +287,7 @@ public class EmpManagerImpl implements EmpManager {
     @Override
     public List<AttendType> GetAllType() {
 
-        return attendTypeDao.findAll(AttendType.class);
+        return typeDao.findAll(AttendType.class);
     }
 
     /**
@@ -277,7 +307,7 @@ public class EmpManagerImpl implements EmpManager {
         Application app = new Application();
         //获取申请需要改变的出勤记录
         Attend attend = attendDao.get(Attend.class, attId);
-        AttendType attendType = attendTypeDao.get(AttendType.class, typeId);
+        AttendType attendType = typeDao.get(AttendType.class, typeId);
         app.setAttend(attend);
         app.setType(attendType);
         if(reason != null){

@@ -11,9 +11,63 @@
        http://www/springframework.org/schema/aop/spring-aop-4.0.xsd">
 
     <!--定义业务逻辑组件模板，为之注入DAO组件-->
-    <bean id="managerTemplate" abstract="true" lazy-init="true" >
-        <property name="attendDao" ref="attendDao"></property>
-
+    <bean id="managerTemplate" abstract="true" lazy-init="true">
+        <property name="attendDao" ref="attendDao"/>
+        <property name="empDao" ref="employeeDao" />
+        <property name="typeDao" ref="attendTypeDao" />
+        <property name="mgrDao" ref="managerDao" />
+        <property name="checkDao" ref="checkDao" />
+        <property name="payDao" ref="payDao" />
     </bean>
+
+    <!-- 定义两个业务逻辑组件，继承业务逻辑组件的模板 -->
+    <bean id="empManager"
+          class="org.crazyit.hrsystem.service.impl.EmpManagerImpl"
+          parent="managerTemplate" />
+
+    <bean id="mgrManager"
+          class="org.crazyit.hrsystem.service.impl.MgrManagerImpl"
+          parent="managerTemplate" />
+
+    <!-- cronExpression指定Cron表达式：每月3日2时启动 -->
+    <!--<bean id="cronTriggerPay"-->
+          <!--class="org.springframework.scheduling.quartz.CronTriggerFactoryBean"-->
+          <!--p:cronExpression="0 0 2 3 * ? *">-->
+
+        <!--<property name="jobDetail">-->
+            <!--&lt;!&ndash; 使用嵌套Bean的方式来定义任务Bean-->
+				<!--jobClass指定任务Bean的实现类 &ndash;&gt;-->
+            <!--&lt;!&ndash;<bean class="org.springframework.scheduling.quartz.JobDetailFactoryBean"&ndash;&gt;-->
+                <!--&lt;!&ndash;p:jobClass="org.crazyit.hrsystem.s"&ndash;&gt;-->
+            <!--&lt;!&ndash;&gt;</bean>&ndash;&gt;-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--配置Hibernate的局部事务管理器，使用HibernateTransactionManager类-->
+    <!--并注入SessionFactory的引用-->
+
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+          p:sessionFactory-ref="sessionFactory" />
+    <!--配置事务增强处理Bean，指定事务管理器-->
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <!--用于配置详细的事务语义-->
+        <tx:attributes>
+            <!--所有以get开头的方法是read－only的-->
+            <tx:method name="get*" read-only="true"/>
+            <!--其他方法使用默认的事务设置-->
+            <tx:method name="*"/>
+        </tx:attributes>
+
+    </tx:advice>
+
+    <aop:config>
+        <!--配置一个切入点，匹配empManager和mgrManager,两个Bean的所有方法执行-->
+        <aop:pointcut id="leePointcut"
+                      expression="bean(empManager) or bean(mgrManager)" />
+        <!--指定在leePointcut 切入点应用txAdvice事务增强处理-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="leePointcut"/>
+    </aop:config>
 
 </beans>
